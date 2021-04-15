@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reactNico/static/css/main.e8f5c25c.chunk.css",
-    "main.js": "/reactNico/static/js/main.82dd39d5.chunk.js",
-    "main.js.map": "/reactNico/static/js/main.82dd39d5.chunk.js.map",
+    "main.css": "/reactNico/static/css/main.3aeaa868.chunk.css",
+    "main.js": "/reactNico/static/js/main.64f82f32.chunk.js",
+    "main.js.map": "/reactNico/static/js/main.64f82f32.chunk.js.map",
     "runtime-main.js": "/reactNico/static/js/runtime-main.3c954e7d.js",
     "runtime-main.js.map": "/reactNico/static/js/runtime-main.3c954e7d.js.map",
-    "static/js/2.84cf9666.chunk.js": "/reactNico/static/js/2.84cf9666.chunk.js",
-    "static/js/2.84cf9666.chunk.js.map": "/reactNico/static/js/2.84cf9666.chunk.js.map",
+    "static/js/2.f9938790.chunk.js": "/reactNico/static/js/2.f9938790.chunk.js",
+    "static/js/2.f9938790.chunk.js.map": "/reactNico/static/js/2.f9938790.chunk.js.map",
     "index.html": "/reactNico/index.html",
-    "static/css/main.e8f5c25c.chunk.css.map": "/reactNico/static/css/main.e8f5c25c.chunk.css.map",
-    "static/js/2.84cf9666.chunk.js.LICENSE.txt": "/reactNico/static/js/2.84cf9666.chunk.js.LICENSE.txt"
+    "static/css/main.3aeaa868.chunk.css.map": "/reactNico/static/css/main.3aeaa868.chunk.css.map",
+    "static/js/2.f9938790.chunk.js.LICENSE.txt": "/reactNico/static/js/2.f9938790.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3c954e7d.js",
-    "static/js/2.84cf9666.chunk.js",
-    "static/css/main.e8f5c25c.chunk.css",
-    "static/js/main.82dd39d5.chunk.js"
+    "static/js/2.f9938790.chunk.js",
+    "static/css/main.3aeaa868.chunk.css",
+    "static/js/main.64f82f32.chunk.js"
   ]
 }
