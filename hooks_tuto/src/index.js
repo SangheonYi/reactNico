@@ -1,26 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
+import useConfirm from "./module/useConfirm";
+import usePreventLeave from "./module/usePreventLeave";
 
-const useClick = (onClick) => {
-  const element = useRef();
-  useEffect(() => {
-    if (element.current && typeof onClick === "function") {
-      element.current.addEventListener("click", onClick);
-    }
-    return () => {
-      if (element.current && typeof onClick === "function") {
-        element.current.removeEventListener("click", onClick);
-      }
-    };
-  }, []);
-  return element;
-};
 const App = () => {
-  const sayHello = () => console.log("say hello");
-  const title = useClick(sayHello);
+  const {enablePrevent, disablePrevent} = usePreventLeave();
   return (
     <div className="App">
-      <h1 ref={title}>Hi</h1>
+      <button onClick={enablePrevent}>Protect</button>
+      <button onClick={disablePrevent}>Unprotect</button>
     </div>
   );
 };
