@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 import useConfirm from "./module/useConfirm";
-import usePreventLeave from "./module/usePreventLeave";
+import useBeforeLeave from "./module/useBeforeLeave";
 
 const App = () => {
-  const {enablePrevent, disablePrevent} = usePreventLeave();
+  const begForLife = () => {
+    console.log("Pls dont leave");
+  };
+  useBeforeLeave(begForLife);
   return (
     <div className="App">
-      <button onClick={enablePrevent}>Protect</button>
-      <button onClick={disablePrevent}>Unprotect</button>
+      <h1>Hello</h1>
     </div>
   );
 };
