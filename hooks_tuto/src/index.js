@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import useFadeIn from "./module/useFadeIn";
+import useNetwork from "./module/useNetwork";
 
 const App = () => {
-  const fadeInH1 = useFadeIn(1, 2);
-  const fadeInP = useFadeIn(5, 10);
-
-
+  const handleNetwork = onLine => {
+    console.log(onLine ? "online" : "offline");
+  }
+  const onLine  = useNetwork(handleNetwork);
+console.log(navigator.onLine);
   return (
     <div className="App">
-      <h1 {...fadeInH1}>Hello</h1>
-      <p {...fadeInP}>lorem ipsum aaaa</p>
+      <h1>{ onLine ? "Online" : "Offline" }</h1>
     </div>
   );
 };
