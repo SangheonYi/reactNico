@@ -1,16 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import useNetwork from "./module/useNetwork";
+import useNotification from "./module/useNotification";
 
 const App = () => {
-  const handleNetwork = onLine => {
-    console.log(onLine ? "online" : "offline");
-  }
-  const onLine  = useNetwork(handleNetwork);
-console.log(navigator.onLine);
+  const triggerNotif = useNotification("Can I st?", { body: "yeahp" });
   return (
-    <div className="App">
-      <h1>{ onLine ? "Online" : "Offline" }</h1>
+    <div>
+      <button onClick={triggerNotif}>Hello</button>
     </div>
   );
 };
