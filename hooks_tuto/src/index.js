@@ -1,12 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import useNotification from "./module/useNotification";
+import useAxios from "./module/useAxios";
 
 const App = () => {
-  const triggerNotif = useNotification("Can I st?", { body: "yeahp" });
+  const { loading, data, error, refetch } = useAxios({
+    url: "https://yts.mx/api/v2/list_movies.json",
+  });
+  console.log(
+    `loading: ${loading}\ndata: ${JSON.stringify(data)}\nerror: ${error}`
+  );
   return (
     <div>
-      <button onClick={triggerNotif}>Hello</button>
+      <h1>{data && data.status}</h1>
+      <h2>{loading && "Loading"}</h2>
+      <button onClick={refetch}>Refetch</button>
     </div>
   );
 };
