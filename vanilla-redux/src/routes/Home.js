@@ -5,7 +5,6 @@ import { actionCreaTors } from "../store";
 
 function Home({ toDos, addToDo }) {
   const [text, setText] = useState("");
-  console.log(addToDo);
   function onChange(e) {
     setText(e.target.value);
   }
